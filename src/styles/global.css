@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Modo Claro por defecto */
+html:not(.dark) {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Modo Oscuro activado por botón */
+html.dark {
+  background-color: #0b0f19;
+  color: #f8fafc;
+}

@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="CodeMarket Lab | Fábrica de Software & Soluciones Cloud">
+  <!-- HERO CODEMARKET LAB -->
+  <section class="py-24 text-center max-w-5xl mx-auto px-4">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-bold mb-6">
+      🚀 Innovación, Software y Soluciones en la Nube
+    </div>
+
+    <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
+      Desarrollamos el software que <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-sky-500 to-emerald-500">hace escalar</span> tu negocio.
+    </h1>
+    <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+      En CodeMarket Lab diseñamos productos digitales robustos, integraciones empresariales con SUNAT y sistemas ERP de alto rendimiento.
+    </p>
+
+    <!-- BANNER FACTUAPP DESTACADO -->
+    <div class="mt-16 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between text-left gap-6 shadow-xl dark:shadow-2xl">
+      <div>
+        <span class="bg-blue-600 text-white text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-md">Producto Destacado</span>
+        <h3 class="text-2xl font-black text-slate-900 dark:text-white mt-2">FactuApp ERP & Facturador SUNAT</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 mt-1 max-w-md">Emite comprobantes ilimitados, controla tus almacenes, cajas y adapta el sistema a farmacias, restaurantes u hoteles.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="/factuapp" class="whitespace-nowrap px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition shadow-lg shadow-blue-600/30 text-center">
+          Conocer FactuApp →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS CODEMARKET LAB -->
+  <section class="py-20 bg-slate-100/70 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800" id="servicios">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-extrabold tracking-widest text-blue-600 dark:text-blue-400">Nuestras Capacidades</h2>
+        <p class="mt-2 text-3xl font-black text-slate-900 dark:text-white">Servicios especializados para empresas</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm hover:border-blue-500 transition">
+          <div class="text-3xl mb-4">💻</div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Software a Medida</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Desarrollo de aplicaciones web y plataformas SaaS escalables según las reglas específicas de tu operación.</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm hover:border-emerald-500 transition">
+          <div class="text-3xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Integraciones SUNAT & APIs</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Conectamos tu sistema o ecommerce existente con la facturación electrónica oficial de SUNAT de forma transparente.</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm hover:border-blue-500 transition">
+          <div class="text-3xl mb-4">☁️</div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Infraestructura & Cloud</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Configuración, seguridad y mantenimiento de servidores Linux, bases de datos y despliegues en la nube.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION DE CONTACTO -->
+  <section class="py-20" id="contacto">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-4">¿Tienes un proyecto o necesitas asesoría?</h2>
+      <p class="text-slate-600 dark:text-slate-400 mb-8 font-medium">Hablemos directamente por WhatsApp y revisemos cómo podemos ayudarte.</p>
+      <a 
+        href="https://wa.me/51920306004?text=Hola%20CodeMarket,%20tengo%20un%20proyecto%20que%20deseo%20consultar" 
+        target="_blank"
+        class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition shadow-xl shadow-emerald-600/20"
+      >
+        <span>Escribir al WhatsApp (920 306 004)</span>
+      </a>
+    </div>
+  </section>
+</Layout>

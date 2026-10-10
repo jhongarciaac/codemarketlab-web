@@ -1,0 +1,523 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="FactuApp | Sistema ERP y Facturación Electrónica SUNAT" description="Facturación electrónica ilimitada, POS veloz, control de inventarios y giros especializados para empresas en Perú.">
+  
+  <!-- HERO FACTUAPP -->
+  <section class="relative pt-10 pb-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <!-- Logo FactuApp -->
+      <div class="flex justify-center mb-6">
+        <img src="/logo-factuapp.png" alt="FactuApp" class="h-20 sm:h-28 w-auto object-contain drop-shadow-md" />
+      </div>
+
+      <!-- Badges -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-8">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs font-bold">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Conexión Directa SUNAT & OSE Homologado
+        </div>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-700 dark:text-blue-400 text-xs font-bold">
+          ⚡ Soporte Crítico 24/7 por WhatsApp
+        </div>
+      </div>
+      
+      <!-- Título de Alto Impacto -->
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 dark:text-white max-w-4xl mx-auto leading-tight">
+        Facturación electrónica y ERP diseñado para <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-sky-500 to-emerald-500">vender sin interrupciones</span>
+      </h1>
+      
+      <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed font-medium">
+        El sistema en la nube más completo para Perú: comprobantes ilimitados, kardex valorizado, punto de venta y módulos especializados para tu rubro.
+      </p>
+
+      <!-- Botones de Acción -->
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a 
+          href="https://demo.factuapp.pro/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition shadow-xl shadow-blue-600/30 flex items-center justify-center gap-2"
+        >
+          <span>Ingresar al Demo en Vivo</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <a 
+          href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20activar%20mi%20cuenta%20de%20FactuApp" 
+          target="_blank"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white font-bold text-sm transition shadow-sm"
+        >
+          Hablar con Asesor
+        </a>
+      </div>
+
+      <!-- Credenciales del Demo -->
+      <div class="mt-6 inline-block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-5 py-2.5 text-xs text-slate-700 dark:text-slate-300 shadow-sm">
+        🔑 Acceso Demo: <span class="text-blue-600 dark:text-blue-400 font-mono font-bold">demo@gmail.com</span> / Clave: <span class="text-blue-600 dark:text-blue-400 font-mono font-bold">123456</span>
+      </div>
+
+      <!-- MOCKUP PRINCIPAL LIMPIO (SIN BOTONES DE CERRAR NI URL, SIN DEGRADADOS) -->
+      <div class="mt-14 max-w-5xl mx-auto">
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0E131F] shadow-2xl p-2 sm:p-3">
+          <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
+            <img 
+              src="/dashboard-real.png" 
+              alt="Panel Principal FactuApp" 
+              class="w-full h-auto object-cover object-top block"
+              onerror="this.onerror=null; this.src='/dashboard.png';"
+            />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN: EMPRESAS QUE TRABAJAN CON NOSOTROS -->
+  <section class="py-16 bg-white dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs uppercase font-extrabold tracking-widest text-slate-500 dark:text-slate-400 mb-10">
+        Empresas que confían su facturación y gestión en nuestra plataforma
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-center max-w-5xl mx-auto">
+        <!-- San Mateo -->
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 flex flex-col items-center justify-center hover:border-blue-500 transition shadow-sm h-48">
+          <div class="h-16 flex items-center justify-center mb-3">
+            <img 
+              src="/cliente-sanmateo.png" 
+              alt="Logo San Mateo Business Group" 
+              class="max-h-14 max-w-[180px] w-auto object-contain filter dark:brightness-110"
+              onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-2xl font-black text-slate-900 dark:text-white tracking-wider\'>SAN MATEO</span>';"
+            />
+          </div>
+          <span class="text-xs font-bold text-slate-600 dark:text-slate-300 tracking-wide text-center uppercase mt-1">
+            San Mateo Business Group S.R.L.
+          </span>
+        </div>
+
+        <!-- Citec -->
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 flex flex-col items-center justify-center hover:border-emerald-500 transition shadow-sm h-48">
+          <div class="h-16 flex items-center justify-center mb-3">
+            <img 
+              src="/cliente-citec.png" 
+              alt="Logo Citec" 
+              class="max-h-14 max-w-[180px] w-auto object-contain filter dark:brightness-110"
+              onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-2xl font-black text-blue-600 dark:text-blue-400 tracking-wider\'>CITEC</span>';"
+            />
+          </div>
+          <span class="text-xs font-bold text-slate-600 dark:text-slate-300 tracking-wide text-center uppercase mt-1">
+            Citec by San Mateo S.R.L.
+          </span>
+        </div>
+
+        <!-- Lopac -->
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 flex flex-col items-center justify-center hover:border-indigo-500 transition shadow-sm h-48">
+          <div class="h-16 flex items-center justify-center mb-3">
+            <img 
+              src="/cliente-lopac.png" 
+              alt="Logo Lopac Infosecure" 
+              class="max-h-14 max-w-[180px] w-auto object-contain filter dark:brightness-110"
+              onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-2xl font-black text-emerald-600 dark:text-emerald-400 tracking-wider\'>LOPAC INFOSECURE</span>';"
+            />
+          </div>
+          <span class="text-xs font-bold text-slate-600 dark:text-slate-300 tracking-wide text-center uppercase mt-1">
+            Lopac Infosecure S.A.C.
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES DESCRIPTIVAS COMPLETAS DEL ERP (4 MÓDULOS SIN DEGRADADOS) -->
+  <section class="py-24 space-y-24">
+    
+    <!-- 1. Emisión y WhatsApp -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Emisión sin fricción</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-2 leading-tight">
+            Comprobantes listos en 5 segundos y directos al WhatsApp de tu cliente
+          </h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+            Emite Facturas, Boletas y Notas de Crédito conectadas automáticamente con SUNAT. Envía el PDF y XML por WhatsApp o correo en un clic, sin necesidad de descargar archivos.
+          </p>
+          <ul class="mt-6 space-y-2.5 text-sm text-slate-700 dark:text-slate-300 font-medium">
+            <li class="flex items-center gap-2">✓ Búsqueda automática de RUC y DNI sincronizada con RENIEC.</li>
+            <li class="flex items-center gap-2">✓ Formatos de impresión A4, 80mm y 58mm para tiqueteras térmicas.</li>
+            <li class="flex items-center gap-2">✓ Almacenamiento seguro de XML y CDR oficial descargables.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2 shadow-xl">
+          <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+            <img 
+              src="/feature-ventas.png" 
+              alt="Módulo de Ventas" 
+              class="w-full h-auto object-cover block"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80';"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Punto de Venta (POS) -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2 shadow-xl">
+          <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+            <img 
+              src="/feature-pos.png" 
+              alt="Punto de Venta POS" 
+              class="w-full h-auto object-cover block"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=800&q=80';"
+            />
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Punto de Venta Ultra Veloz</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-2 leading-tight">
+            Diseñado para atender colas rápidas sin bloquear tu operación
+          </h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+            El módulo POS funciona con pantalla táctil o lector de código de barras. Soporta pagos mixtos (Efectivo, Yape, Plin, Tarjeta), apertura/cierre de caja chica y reporte de turnos.
+          </p>
+          <ul class="mt-6 space-y-2.5 text-sm text-slate-700 dark:text-slate-300 font-medium">
+            <li class="flex items-center gap-2">✓ Compatible con cualquier impresora térmica USB, Bluetooth o Red.</li>
+            <li class="flex items-center gap-2">✓ Arqueo de caja y control de sobrantes / faltantes al instante.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Inventario, Almacenes y Kardex -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Control Logístico</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-2 leading-tight">
+            Kardex valorizado, multialmacén y control de compras
+          </h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+            Nunca más te quedes sin stock. Monitorea entradas, salidas, traslados entre sucursales y registra tus facturas de compra para conocer tus márgenes reales de ganancia.
+          </p>
+          <ul class="mt-6 space-y-2.5 text-sm text-slate-700 dark:text-slate-300 font-medium">
+            <li class="flex items-center gap-2">✓ Alertas preventivas automáticas de productos por agotarse.</li>
+            <li class="flex items-center gap-2">✓ Importación y exportación masiva en Excel en 2 minutos.</li>
+            <li class="flex items-center gap-2">✓ Valorización de inventario según costo promedio.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2 shadow-xl">
+          <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+            <img 
+              src="/feature-inventario.png" 
+              alt="Inventario y Kardex" 
+              class="w-full h-auto object-cover block"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80';"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Guías de Remisión Electrónicas (GRE) -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2 shadow-xl">
+          <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+            <img 
+              src="/feature-gre.png" 
+              alt="Guías de Remisión Electrónicas GRE" 
+              class="w-full h-auto object-cover block"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80';"
+            />
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Normativa SUNAT Obligatoria</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-2 leading-tight">
+            Guías de Remisión Electrónicas (GRE) Remitente y Transportista
+          </h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+            Traslada mercadería sin contingencias ni multas. Genera tus GRE directamente desde el sistema, con código QR oficial y validación en tiempo real ante la SUNAT.
+          </p>
+          <ul class="mt-6 space-y-2.5 text-sm text-slate-700 dark:text-slate-300 font-medium">
+            <li class="flex items-center gap-2">✓ Generación automática a partir de una factura o boleta previa.</li>
+            <li class="flex items-center gap-2">✓ Registro de conductores, vehículos, placas y puntos de llegada/partida.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- GIROS DE NEGOCIO -->
+  <section class="py-20 bg-slate-100/60 dark:bg-slate-900/40 border-y border-slate-200 dark:border-slate-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-bold tracking-widest text-blue-600 dark:text-blue-400">Especialización</h2>
+        <p class="mt-2 text-3xl font-black text-slate-900 dark:text-white">Adaptado exactamente a tu rubro de trabajo</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-sm hover:border-blue-500 transition">
+          <div class="text-4xl mb-4">🛍️</div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Comercio & POS</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Punto de venta táctil, lector de códigos de barras, control de cajas y ticket rápido.</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-sm hover:border-emerald-500 transition">
+          <div class="text-4xl mb-4">🍽️</div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Restaurantes</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Mesas interactivas, comandas por área a cocina, división de cuentas y delivery.</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-sm hover:border-amber-500 transition">
+          <div class="text-4xl mb-4">💊</div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Farmacias / Boticas</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Control de lotes, fechas de vencimiento obligatorias y principio activo.</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-sm hover:border-blue-500 transition">
+          <div class="text-4xl mb-4">🏨</div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Hoteles</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Control de habitaciones (check-in / check-out), tarifas por noche/hora y consumos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLA DE PRECIOS -->
+  <section class="py-24" id="precios">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-bold tracking-widest text-emerald-600 dark:text-emerald-400">Planes y Precios</h2>
+        <p class="mt-2 text-3xl font-black text-slate-900 dark:text-white">Sin sorpresas ni cobros por factura emitida</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- PLAN BASICO -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Básico</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Para formalizarte y emitir sin límites</p>
+            <div class="mt-6">
+              <div class="flex items-baseline gap-1">
+                <span class="text-4xl font-extrabold text-slate-900 dark:text-white">S/ 39</span>
+                <span class="text-slate-500 dark:text-slate-400 text-sm">/mes</span>
+              </div>
+              <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1">o S/ 390 al año (Ahorra 2 meses)</p>
+            </div>
+            <ul class="mt-8 space-y-3 text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">✓ Facturas y Boletas ilimitadas</li>
+              <li class="flex items-center gap-2">✓ Conexión directa SUNAT</li>
+              <li class="flex items-center gap-2">✓ Envío por WhatsApp y Correo</li>
+              <li class="flex items-center gap-2">✓ Consulta DNI / RUC automática</li>
+              <li class="flex items-center gap-2">✓ 1 Usuario / 1 Sucursal</li>
+              <li class="flex items-center gap-2">✓ Soporte estándar</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Básico%20de%20FactuApp" target="_blank" class="mt-8 block text-center py-3.5 px-4 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 font-bold text-sm transition text-slate-900 dark:text-white">
+            Elegir Básico
+          </a>
+        </div>
+
+        <!-- PLAN COMERCIAL -->
+        <div class="bg-white dark:bg-slate-900 border-2 border-blue-600 rounded-3xl p-8 flex flex-col justify-between relative shadow-xl">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Más Popular
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Comercial</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Ideal para tiendas, ventas y stock</p>
+            <div class="mt-6">
+              <div class="flex items-baseline gap-1">
+                <span class="text-4xl font-extrabold text-slate-900 dark:text-white">S/ 69</span>
+                <span class="text-slate-500 dark:text-slate-400 text-sm">/mes</span>
+              </div>
+              <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1">o S/ 690 al año (Ahorra 2 meses)</p>
+            </div>
+            <ul class="mt-8 space-y-3 text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2 font-bold text-blue-600 dark:text-blue-400">✓ Todo lo del Plan Básico</li>
+              <li class="flex items-center gap-2 font-semibold">✓ 3 Usuarios y 3 Sucursales</li>
+              <li class="flex items-center gap-2">✓ Punto de Venta (POS) rápido</li>
+              <li class="flex items-center gap-2">✓ Control de Inventario y Kardex</li>
+              <li class="flex items-center gap-2">✓ Módulo de Compras y Proveedores</li>
+              <li class="flex items-center gap-2">✓ Reportes de utilidades y ventas</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Comercial%20de%20FactuApp" target="_blank" class="mt-8 block text-center py-3.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 font-bold text-sm transition shadow-lg shadow-blue-600/30 text-white">
+            Elegir Comercial
+          </a>
+        </div>
+
+        <!-- PLAN PRO -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Pro & Giros</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Negocios especializados y distribución</p>
+            <div class="mt-6">
+              <div class="flex items-baseline gap-1">
+                <span class="text-4xl font-extrabold text-slate-900 dark:text-white">S/ 99</span>
+                <span class="text-slate-500 dark:text-slate-400 text-sm">/mes</span>
+              </div>
+              <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1">o S/ 990 al año (Ahorra 2 meses)</p>
+            </div>
+            <ul class="mt-8 space-y-3 text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2 font-bold text-emerald-600 dark:text-emerald-400">✓ Todo lo del Plan Comercial</li>
+              <li class="flex items-center gap-2 font-semibold">✓ Usuarios y Sucursales ILIMITADOS</li>
+              <li class="flex items-center gap-2">✓ 1 Giro (Restaurante, Farmacia u Hotel)</li>
+              <li class="flex items-center gap-2">✓ Guías de Remisión Electrónicas (GRE)</li>
+              <li class="flex items-center gap-2">✓ Módulo Tienda Virtual (Ecommerce)</li>
+              <li class="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-bold">✓ Soporte Crítico 24/7 Exclusivo</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Pro%20de%20FactuApp" target="_blank" class="mt-8 block text-center py-3.5 px-4 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 font-bold text-sm transition text-slate-900 dark:text-white">
+            Elegir Pro
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN "EN COMÚN" -->
+  <section class="py-20 bg-slate-100/60 dark:bg-slate-900/40 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-blue-600 dark:text-blue-400">En Común</span>
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white mt-1">Incluido en todos los planes de FactuApp</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-2xl mb-3">🚀</div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Activación sin costo</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Contratas y emites el mismo día si ya tienes tus credenciales de SUNAT. Sin costo de apertura.</p>
+          <span class="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">S/ 0 de activación</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-2xl mb-3">💬</div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Soporte por WhatsApp</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Atención personalizada en horario comercial y soporte 24/7 para incidencias críticas y clientes Pro.</p>
+          <span class="text-[11px] font-bold text-blue-600 dark:text-blue-400">Respuesta rápida y humana</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-2xl mb-3">🔄</div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Sin permanencia obligatoria</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Pagas mes a mes. Puedes subir de plan o darte de baja cuando lo desees sin penalidades.</p>
+          <span class="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">Libertad total</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-2xl mb-3">📥</div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Migración acompañada</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Nos pasas la lista de tus productos y clientes de tu sistema anterior y nuestro equipo te ayuda a cargarlos.</p>
+          <span class="text-[11px] font-bold text-blue-600 dark:text-blue-400">Carga asistida</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-2xl mb-3">⚙️</div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Desarrollo y Personalizaciones</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">¿Requieres un formato de factura único o conectar tu software? Cotizamos según complejidad.</p>
+          <span class="text-[11px] font-bold text-indigo-600 dark:text-indigo-400">Laboratorio CodeMarket</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-2xl mb-3">🛡️</div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Al día con la norma SUNAT</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Actualizamos el sistema de inmediato cuando SUNAT modifica resoluciones, sin cobrarte extras.</p>
+          <span class="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">Actualizaciones incluidas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-24" id="faq">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-xs uppercase font-extrabold tracking-widest text-blue-600 dark:text-blue-400">Dudas Resueltas</h2>
+        <p class="mt-2 text-3xl font-black text-slate-900 dark:text-white">Preguntas Frecuentes</p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm">
+          <summary class="flex items-center justify-between font-bold text-slate-900 dark:text-white text-base">
+            <span>¿Necesito instalar algún programa en mi computadora?</span>
+            <span class="transition group-open:rotate-180 text-blue-600">▼</span>
+          </summary>
+          <p class="mt-4 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            No. FactuApp es 100% web en la nube. Puedes acceder desde cualquier navegador web en tu computadora, laptop, tablet o celular con internet.
+          </p>
+        </details>
+
+        <details class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm">
+          <summary class="flex items-center justify-between font-bold text-slate-900 dark:text-white text-base">
+            <span>¿Qué necesito para empezar a emitir con SUNAT?</span>
+            <span class="transition group-open:rotate-180 text-blue-600">▼</span>
+          </summary>
+          <p class="mt-4 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Solo necesitas tu RUC activo, tu Clave SOL y tu Certificado Digital (si aún no tienes certificado, te guiamos para obtener el gratuito que brinda SUNAT).
+          </p>
+        </details>
+
+        <details class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm">
+          <summary class="flex items-center justify-between font-bold text-slate-900 dark:text-white text-base">
+            <span>¿Puedo imprimir en tiqueteras térmicas y hojas A4?</span>
+            <span class="transition group-open:rotate-180 text-blue-600">▼</span>
+          </summary>
+          <p class="mt-4 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Sí. FactuApp genera formatos automáticos en A4 para cotizaciones/facturas formales y formatos de ticket de 80mm o 58mm para impresoras térmicas de punto de venta.
+          </p>
+        </details>
+
+        <details class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm">
+          <summary class="flex items-center justify-between font-bold text-slate-900 dark:text-white text-base">
+            <span>¿Cómo funciona el soporte 24/7 para incidencias críticas?</span>
+            <span class="transition group-open:rotate-180 text-blue-600">▼</span>
+          </summary>
+          <p class="mt-4 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Para situaciones urgentes (como caídas de servicio fuera de horario o problemas para emitir de madrugada en hoteles y restaurantes), contamos con guardia técnica dedicada vía WhatsApp.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENTRAL DE VENTAS CON ASESORES -->
+  <section class="py-16 bg-slate-100/80 dark:bg-slate-900/80 border-t border-slate-200 dark:border-slate-800" id="ventas">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-3">Central de Ventas & Asesoría</h2>
+      <p class="text-slate-600 dark:text-slate-300 text-sm mb-8 font-medium">Horario Comercial: Lunes a Viernes 8:30 AM a 7:00 PM | Sábados 9:00 AM a 1:00 PM</p>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <!-- Jhon -->
+        <a href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20asesoria%20sobre%20FactuApp" target="_blank" class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 transition shadow-sm text-center">
+          <div class="text-3xl mb-2">📱</div>
+          <div class="text-lg font-black text-slate-900 dark:text-white">Jhon</div>
+          <div class="font-mono text-sm text-blue-600 dark:text-blue-400 font-bold mt-0.5">920 306 004</div>
+          <div class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-2">Soporte, Demos y Ventas</div>
+        </a>
+
+        <!-- Roger -->
+        <a href="https://wa.me/51976982444?text=Hola%20Roger,%20deseo%20asesoria%20comercial%20sobre%20FactuApp" target="_blank" class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 transition shadow-sm text-center">
+          <div class="text-3xl mb-2">📱</div>
+          <div class="text-lg font-black text-slate-900 dark:text-white">Roger</div>
+          <div class="font-mono text-sm text-blue-600 dark:text-blue-400 font-bold mt-0.5">976 982 444</div>
+          <div class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-2">Ventas y Asesoría Comercial</div>
+        </a>
+
+        <!-- Marco -->
+        <a href="https://wa.me/51994844627?text=Hola%20Marco,%20tengo%20una%20consulta%20sobre%20FactuApp" target="_blank" class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 transition shadow-sm text-center">
+          <div class="text-3xl mb-2">📱</div>
+          <div class="text-lg font-black text-slate-900 dark:text-white">Marco</div>
+          <div class="font-mono text-sm text-blue-600 dark:text-blue-400 font-bold mt-0.5">994 844 627</div>
+          <div class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-2">Consultas Generales</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
