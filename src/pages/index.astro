@@ -2,75 +2,448 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="CodeMarket Lab | Fábrica de Software & Soluciones Cloud">
-  <!-- HERO CODEMARKET LAB -->
-  <section class="py-24 text-center max-w-5xl mx-auto px-4">
-    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-bold mb-6">
-      🚀 Innovación, Software y Soluciones en la Nube
+<Layout 
+  title="CodeMarket Lab | Fábrica de Software, Integraciones SUNAT & Cloud" 
+  description="Desarrollo de software a medida, APIs para facturación electrónica SUNAT, ERPs escalables y arquitectura en la nube para empresas en Perú y Latinoamérica."
+>
+
+  <!-- SCHEMA ORGANIZACIÓN SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CodeMarket Lab",
+      "url": "https://codemarket.pe",
+      "logo": "/logo-factuapp.png",
+      "description": "Fábrica de software especializada en soluciones cloud, integraciones SUNAT y plataformas SaaS empresariales.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+51920306004",
+        "contactType": "sales",
+        "areaServed": "PE"
+      }
+    }
+  </script>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <div class="hidden sm:block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 text-xs py-2 px-3.5 rounded-lg shadow-xl font-medium">
+      💼 ¿Tienes un proyecto en mente? <strong>Conversemos en vivo</strong>
     </div>
+    <a 
+      href="https://wa.me/51920306004?text=Hola%20CodeMarket%20Lab,%20deseo%20cotizar%20un%20proyecto%20de%20software" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      aria-label="Contactar a CodeMarket Lab por WhatsApp"
+      class="h-14 w-14 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-2xl shadow-emerald-500/40 transition hover:scale-105"
+    >
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.101.005.24-.038.375.289.145.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/>
+      </svg>
+    </a>
+  </div>
 
-    <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
-      Desarrollamos el software que <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-sky-500 to-emerald-500">hace escalar</span> tu negocio.
-    </h1>
-    <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-      En CodeMarket Lab diseñamos productos digitales robustos, integraciones empresariales con SUNAT y sistemas ERP de alto rendimiento.
-    </p>
-
-    <!-- BANNER FACTUAPP DESTACADO -->
-    <div class="mt-16 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between text-left gap-6 shadow-xl dark:shadow-2xl">
-      <div>
-        <span class="bg-blue-600 text-white text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-md">Producto Destacado</span>
-        <h3 class="text-2xl font-black text-slate-900 dark:text-white mt-2">FactuApp ERP & Facturador SUNAT</h3>
-        <p class="text-sm text-slate-600 dark:text-slate-300 mt-1 max-w-md">Emite comprobantes ilimitados, controla tus almacenes, cajas y adapta el sistema a farmacias, restaurantes u hoteles.</p>
+  <!-- HERO CODEMARKET LAB -->
+  <section class="relative pt-16 pb-20 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <!-- Etiquetas Superiores Compactas -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-blue-500/10 border border-blue-500/30 text-blue-700 dark:text-blue-400 text-[11px] font-bold">
+          ⚡ Ingeniería de Software & Arquitectura Cloud
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-[11px] font-bold">
+          🇵🇪 Homologación Directa con SUNAT
+        </span>
       </div>
-      <div class="flex flex-col sm:flex-row gap-3">
-        <a href="/factuapp" class="whitespace-nowrap px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition shadow-lg shadow-blue-600/30 text-center">
-          Conocer FactuApp →
+
+      <!-- Título Principal -->
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 dark:text-white max-w-4xl mx-auto leading-tight">
+        Construimos software robusto que <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-sky-500 to-emerald-500">acelera el crecimiento</span> de tu empresa
+      </h1>
+      
+      <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal">
+        En <strong>CodeMarket Lab</strong> transformamos procesos complejos en plataformas digitales ágiles: sistemas ERP modernos, microservicios en la nube y APIs de facturación electrónica de alta disponibilidad.
+      </p>
+
+      <!-- Botones Principales -->
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a 
+          href="#servicios" 
+          class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition shadow-xl shadow-blue-600/30 flex items-center justify-center gap-2"
+        >
+          <span>Explorar Servicios</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </a>
+        <a 
+          href="https://wa.me/51920306004?text=Hola%20CodeMarket%20Lab,%20deseo%20agendar%20una%20reunion%20tecnica" 
+          target="_blank"
+          class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white font-bold text-sm transition shadow-sm"
+        >
+          Agendar Consulta Técnica
+        </a>
+      </div>
+
+      <!-- BANNER PRODUCTO INSIGNIA: FACTUAPP -->
+      <div class="mt-16 text-left max-w-5xl mx-auto">
+        <div class="p-1 rounded-3xl bg-gradient-to-r from-blue-600 via-sky-500 to-emerald-500 shadow-2xl">
+          <div class="bg-white dark:bg-slate-900 rounded-[22px] p-6 sm:p-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+            <div class="space-y-4 max-w-2xl">
+              <div class="flex items-center gap-2">
+                <span class="bg-blue-600 text-white text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded">
+                  Producto Insignia
+                </span>
+                <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                  ● Conexión Directa SUNAT / OSE
+                </span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white leading-tight">
+                FactuApp ERP & Facturación Electrónica Ilimitada
+              </h3>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                Nuestra plataforma SaaS líder para la gestión integral de empresas: emisión ultrarrápida de comprobantes en menos de 5 segundos, control multialmacén, kardex valorizado, punto de venta (POS) y módulos para boticas, restaurantes y hoteles.
+              </p>
+              
+              <div class="flex flex-wrap gap-2 text-[11px] font-semibold text-slate-600 dark:text-slate-300">
+                <span class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">✓ Planes desde S/ 40/mes</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">✓ Comprobantes Ilimitados</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">✓ Envío por WhatsApp en un Clic</span>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row lg:flex-col gap-3 w-full lg:w-auto shrink-0">
+              <a 
+                href="/factuapp" 
+                class="px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm text-center transition shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2"
+              >
+                <span>Ver Planes y Detalles</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <a 
+                href="https://demo.factuapp.pro/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="px-7 py-3.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-white font-bold text-sm text-center transition border border-slate-200 dark:border-slate-700"
+              >
+                Probar Demo en Vivo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MÉTRICAS DE IMPACTO -->
+  <section class="py-12 bg-white dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white font-mono">+1.5M</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-medium mt-1">Comprobantes procesados</div>
+        </div>
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-emerald-600 dark:text-emerald-400 font-mono">99.9%</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-medium mt-1">Disponibilidad en la nube</div>
+        </div>
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-blue-600 dark:text-blue-400 font-mono">&lt; 2s</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-medium mt-1">Tiempo promedio de timbrado</div>
+        </div>
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white font-mono">24/7</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-medium mt-1">Monitoreo de infraestructura</div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- SERVICIOS CODEMARKET LAB -->
-  <section class="py-20 bg-slate-100/70 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800" id="servicios">
+  <section class="py-24" id="servicios">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs uppercase font-extrabold tracking-widest text-blue-600 dark:text-blue-400">Nuestras Capacidades</h2>
-        <p class="mt-2 text-3xl font-black text-slate-900 dark:text-white">Servicios especializados para empresas</p>
+        <h2 class="text-xs uppercase font-extrabold tracking-widest text-blue-600 dark:text-blue-400">Capacidades de Ingeniería</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">Soluciones tecnológicas orientadas al negocio</p>
+        <p class="mt-3 text-slate-600 dark:text-slate-300 text-sm">Desarrollamos arquitectura informática diseñada para operar sin interrupciones, con alta seguridad y tolerancia a fallos.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm hover:border-blue-500 transition">
-          <div class="text-3xl mb-4">💻</div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Software a Medida</h3>
-          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Desarrollo de aplicaciones web y plataformas SaaS escalables según las reglas específicas de tu operación.</p>
+        
+        <!-- Servicio 1 -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-3xl shadow-sm hover:border-blue-500 transition group flex flex-col justify-between">
+          <div>
+            <div class="h-12 w-12 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-2xl mb-6">
+              💻
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">
+              Desarrollo de Software a Medida
+            </h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+              Diseño y arquitectura de plataformas web, intranets operativas y sistemas SaaS adaptados estrictamente a la lógica operativa de tu negocio.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-500 dark:text-slate-400">
+              <li class="flex items-center gap-2">✓ Arquitecturas modulares, seguras y escalables.</li>
+              <li class="flex items-center gap-2">✓ Paneles de administración e interfaces reactivas.</li>
+              <li class="flex items-center gap-2">✓ Código limpio, documentado y preparado para crecer.</li>
+            </ul>
+          </div>
+          <a 
+            href="https://wa.me/51920306004?text=Hola%20CodeMarket,%20deseo%20cotizar%20un%20Software%20a%20Medida" 
+            target="_blank" 
+            class="mt-8 text-xs font-bold text-blue-600 dark:text-blue-400 inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+          >
+            Cotizar requerimiento →
+          </a>
         </div>
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm hover:border-emerald-500 transition">
-          <div class="text-3xl mb-4">⚡</div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Integraciones SUNAT & APIs</h3>
-          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Conectamos tu sistema o ecommerce existente con la facturación electrónica oficial de SUNAT de forma transparente.</p>
+
+        <!-- Servicio 2 -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-3xl shadow-sm hover:border-emerald-500 transition group flex flex-col justify-between">
+          <div>
+            <div class="h-12 w-12 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-2xl mb-6">
+              ⚡
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition">
+              APIs & Facturación Electrónica SUNAT
+            </h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+              Conectamos tus plataformas existentes (CRMs, tiendas WooCommerce, Shopify, Magento o sistemas legacy) con los servidores de SUNAT u OSE.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-500 dark:text-slate-400">
+              <li class="flex items-center gap-2">✓ Emisión automatizada de facturas, boletas y GRE.</li>
+              <li class="flex items-center gap-2">✓ Generación de XML UBL 2.1, firma digital y CDR oficial.</li>
+              <li class="flex items-center gap-2">✓ Integración por API RESTful sencilla y bien documentada.</li>
+            </ul>
+          </div>
+          <a 
+            href="https://wa.me/51920306004?text=Hola%20CodeMarket,%20deseo%20integrar%20mi%20sistema%20con%20SUNAT" 
+            target="_blank" 
+            class="mt-8 text-xs font-bold text-emerald-600 dark:text-emerald-400 inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+          >
+            Consultar integración API →
+          </a>
         </div>
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm hover:border-blue-500 transition">
-          <div class="text-3xl mb-4">☁️</div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Infraestructura & Cloud</h3>
-          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Configuración, seguridad y mantenimiento de servidores Linux, bases de datos y despliegues en la nube.</p>
+
+        <!-- Servicio 3 -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-3xl shadow-sm hover:border-sky-500 transition group flex flex-col justify-between">
+          <div>
+            <div class="h-12 w-12 rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center text-2xl mb-6">
+              ☁️
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition">
+              Arquitectura Cloud & DevOps
+            </h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+              Aseguramos la estabilidad, velocidad y tolerancia a fallos de tus aplicaciones mediante despliegues modernos en servidores Linux y redes Cloudflare.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-500 dark:text-slate-400">
+              <li class="flex items-center gap-2">✓ Aprovisionamiento de VPS Linux (Ubuntu, Debian).</li>
+              <li class="flex items-center gap-2">✓ Certificados SSL, cortafuegos WAF y mitigación de ataques.</li>
+              <li class="flex items-center gap-2">✓ Automatización CI/CD con GitHub y Cloudflare Pages.</li>
+            </ul>
+          </div>
+          <a 
+            href="https://wa.me/51920306004?text=Hola%20CodeMarket,%20necesito%20soporte%20en%20Infraestructura%20Cloud" 
+            target="_blank" 
+            class="mt-8 text-xs font-bold text-sky-600 dark:text-sky-400 inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+          >
+            Optimizar infraestructura →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK TECNOLÓGICO (2 FILAS EQUILIBRADAS Y ESTÉTICAS) -->
+  <section class="py-14 bg-white dark:bg-slate-900/60 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs uppercase font-extrabold tracking-widest text-slate-500 dark:text-slate-400 mb-8">
+        Tecnologías que impulsan nuestras plataformas
+      </p>
+
+      <div class="space-y-3.5">
+        
+        <!-- Fila 1: Backend, Bases de Datos & Cloud (6 Tecnologías) -->
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          
+          <!-- Node.js -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-emerald-500 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-[#5FA04E]" viewBox="0 0 24 24">
+              <path d="M12 2L2 7.8v11.4l10 5.8 10-5.8V7.8L12 2zm-1.1 18.2L4 16.2V9.8l6.9 4v6.4zm2.2 0v-6.4l6.9-4v6.4l-6.9 4zM12 11.5L5.1 7.5 12 3.5l6.9 4-6.9 4z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">Node.js</span>
+          </div>
+
+          <!-- Python -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-blue-400 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-[#3776AB]" viewBox="0 0 24 24">
+              <path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.006 2.75h5.813v.825H3.9S0 5.766 0 11.914c0 6.15 3.404 5.938 3.404 5.938h2.032v-2.86s-.11-3.404 3.348-3.404h5.757s3.238.052 3.238-3.18V2.656S18.27 0 11.914 0zm-3.238 1.832a1.03 1.03 0 110 2.062 1.03 1.03 0 010-2.062zM12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.006-2.75h-5.813v-.825h8.12S24 18.234 24 12.086c0-6.15-3.404-5.938-3.404-5.938h-2.032v2.86s.11 3.404-3.348 3.404H9.459s-3.238-.052-3.238 3.18v5.75s-.488 2.656 5.865 2.656zm3.238-1.832a1.03 1.03 0 110-2.062 1.03 1.03 0 010 2.062z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">Python</span>
+          </div>
+
+          <!-- PostgreSQL -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-sky-500 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-[#4169E1]" viewBox="0 0 24 24">
+              <path d="M12.001 0C5.372 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">PostgreSQL</span>
+          </div>
+
+          <!-- Redis -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-red-500 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-[#DC382D]" viewBox="0 0 24 24">
+              <path d="M22.02 9.07l-9.5-5.5a1.03 1.03 0 00-1.04 0l-9.5 5.5a1.03 1.03 0 00-.52.9v11a1.03 1.03 0 00.52.9l9.5 5.5c.32.19.72.19 1.04 0l9.5-5.5a1.03 1.03 0 00.52-.9v-11a1.03 1.03 0 00-.52-.9zm-10.02-3.8l7.46 4.32-2.9 1.68-7.46-4.32 2.9-1.68zm-8 6.08l7 4.05v7.25l-7-4.05v-7.25zm9 11.3v-7.25l7-4.05v7.25l-7 4.05z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">Redis</span>
+          </div>
+
+          <!-- Docker -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-blue-400 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-[#2496ED]" viewBox="0 0 24 24">
+              <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.186.185.186zm0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.186.185.186zm-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186zm-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.186.186.186zm5.893 2.715h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.186.186 0 00-.186.185v1.888c0 .102.083.185.186.185zm-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185zm-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.185-.186h-2.12a.186.186 0 00-.184.185v1.888c0 .102.083.185.185.185zm-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.184.185zM23.77 9.89c-.235-.3-.715-.407-1.378-.31-.082-.47-.367-.9-.817-1.223-.74-.53-1.74-.61-2.61-.22-.16-.62-.57-1.15-1.16-1.46-.91-.48-2.02-.38-2.83.25-.09-.38-.34-.71-.72-.94-.85-.5-1.93-.38-2.65.29L12 6.54l-.45-.26c-.72-.42-1.63-.38-2.31.09-.59.41-.95 1.07-1 1.78-.05.7-.58 1.25-1.29 1.34-1.2.16-2.2.98-2.56 2.12-.13.41-.14.85-.02 1.28.32 1.15 1.26 1.99 2.45 2.18 1.1.18 2.22-.3 2.87-1.22.42-.59 1.12-.94 1.85-.94h10.98c.47 0 .91.19 1.24.52.32.33.51.78.51 1.25 0 1.95-1.59 3.54-3.54 3.54H3.45a.75.75 0 010-1.5h17.22c1.12 0 2.04-.91 2.04-2.04 0-.54-.22-1.06-.61-1.44-.39-.39-.9-.6-1.43-.6H9.69c-.43 0-.85.18-1.15.49-.3.32-.73.49-1.18.47-.79-.04-1.43-.62-1.52-1.41-.09-.79.37-1.52 1.12-1.77.7-.24 1.48-.05 1.99.47.3.31.72.49 1.16.49h4.37c.41 0 .75-.34.75-.75V7.81c0-.41-.34-.75-.75-.75h-1.9c-.31 0-.59-.16-.74-.42a.86.86 0 01.07-.88c.32-.42.84-.63 1.37-.55.43.07.82.32 1.05.69.17.27.46.43.78.43h1.89c.41 0 .75-.34.75-.75V3.94c0-.41-.34-.75-.75-.75h-1.9c-.31 0-.59-.16-.74-.42a.86.86 0 01.07-.88c.32-.42.84-.63 1.37-.55.53.08.97.43 1.15.93.1.28.36.46.66.46h5.36c.41 0 .75.34.75.75v1.88c0 .41-.34.75-.75.75h-1.9c-.31 0-.59.16-.74.42a.86.86 0 01.07.88c.32.42.84.63 1.37.55.53.08.97.43 1.15.93.1.28.36.46.66.46h2.4c.41 0 .75.34.75.75v1.88c0 .41-.34.75-.75.75h-1.9c-.31 0-.59.16-.74.42a.86.86 0 01.07.88c.28.37.72.58 1.19.58.15 0 .31-.02.46-.07.47-.16.99-.03 1.33.33z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">Docker</span>
+          </div>
+
+          <!-- Cloudflare -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-amber-500 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-[#F38020]" viewBox="0 0 24 24">
+              <path d="M18.33 13.06c.03-.23.05-.46.05-.7 0-2.54-2.06-4.6-4.6-4.6-1.5 0-2.83.72-3.67 1.83-.56-.37-1.23-.59-1.96-.59-1.93 0-3.5 1.57-3.5 3.5 0 .19.02.38.05.56C2.08 13.38 0 15.65 0 18.4 0 21.49 2.51 24 5.6 24h12.8c3.09 0 5.6-2.51 5.6-5.6 0-2.57-1.74-4.73-4.12-5.34h.45z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">Cloudflare</span>
+          </div>
+
+        </div>
+
+        <!-- Fila 2: Frontend, APIs & DevOps (6 Tecnologías) -->
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          
+          <!-- TypeScript -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-blue-500 transition group shadow-sm">
+            <svg class="w-4 h-4 shrink-0 fill-[#3178C6]" viewBox="0 0 24 24">
+              <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0H1.125zm16.5 14.5c.345.69 1.05 1.15 1.875 1.15.825 0 1.35-.45 1.35-1.05 0-1.5-3.3-1.05-3.3-3.45 0-1.2.975-2.175 2.55-2.175 1.125 0 1.95.45 2.475 1.35l-1.35.825c-.225-.45-.6-.675-1.125-.675-.525 0-.9.3-.9.675 0 1.35 3.3.9 3.3 3.45 0 1.35-1.125 2.25-2.85 2.25-1.575 0-2.55-.675-3.075-1.65l1.05-.75zm-7.8-5.325h6.6v1.8h-2.25v7.275h-2.1v-7.275H9.825v-1.8z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">TypeScript</span>
+          </div>
+
+          <!-- React / Next.js -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-cyan-400 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-[#61DAFB]" viewBox="0 0 24 24">
+              <path d="M12 9.06a2.94 2.94 0 100 5.88 2.94 2.94 0 000-5.88zm0-6.06c4.98 0 9.77 1.84 10.95 4.67 1.18 2.82-1.33 6.09-5.94 7.78 4.61 1.69 7.12 4.96 5.94 7.78-1.18 2.83-5.97 4.67-10.95 4.67s-9.77-1.84-10.95-4.67c-1.18-2.82 1.33-6.09 5.94-7.78C2.33 14.36-.18 11.09 1 8.27 2.18 5.44 6.97 3.6 12 3.6m0 1.8c-4.14 0-8.23 1.48-9.15 3.68-.93 2.22 1.42 4.88 5.56 6.13-1.07-2.19-1.42-4.52-.94-6.38.3-.98.85-1.82 1.6-2.42A7.37 7.37 0 0112 5.4zm3.03 2.45c.48 1.86.13 4.19-.94 6.38 4.14-1.25 6.49-3.91 5.56-6.13-.92-2.2-5.01-3.68-9.15-3.68-.97 0-1.9.15-2.75.44.75.6 1.3 1.44 1.6 2.42 1.16-.14 2.37-.14 3.52 0-.28.18-.55.38-.8.6z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">React & Next.js</span>
+          </div>
+
+          <!-- REST & GraphQL APIs -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-pink-500 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-[#E10098]" viewBox="0 0 24 24">
+              <path d="M12 0L1.6 6v12L12 24l10.4-6V6L12 0zm0 2.2l8.5 4.9v9.8L12 21.8l-8.5-4.9V7.1L12 2.2zM4.8 8.1l7.2 4.2 7.2-4.2-1.1-1.9-6.1 3.5-6.1-3.5-1.1 1.9zm0 7.8l6.1 3.5v-7.1l-6.1-3.5v7.1zm14.4 0v-7.1l-6.1 3.5v7.1l6.1-3.5z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">REST APIs & GraphQL</span>
+          </div>
+
+          <!-- Linux / Ubuntu -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-yellow-500 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-[#FCC624]" viewBox="0 0 24 24">
+              <path d="M12.002 0c-3.1 0-5.602 2.502-5.602 5.602 0 1.25.42 2.41 1.13 3.34-.14.49-.31 1.26-.31 2.058 0 1.63.48 3.19 1.34 4.38-.28.84-.73 1.76-1.34 2.56-1.12 1.48-2.67 2.66-2.67 3.99 0 1.16 2.07 2.07 7.452 2.07s7.452-.91 7.452-2.07c0-1.33-1.55-2.51-2.67-3.99-.61-.8-1.06-1.72-1.34-2.56.86-1.19 1.34-2.75 1.34-4.38 0-.8-.17-1.57-.31-2.058.71-.93 1.13-2.09 1.13-3.34C17.604 2.502 15.102 0 12.002 0z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">Linux / Ubuntu</span>
+          </div>
+
+          <!-- Nginx -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-emerald-600 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-[#009639]" viewBox="0 0 24 24">
+              <path d="M12 0L1.605 6v12L12 24l10.395-6V6L12 0zm0 2.247l8.448 4.877v9.752L12 21.753l-8.448-4.877V7.124L12 2.247zm-1.895 5.565v5.301l-2.613-3.327v6.426h1.79v-5.263l2.613 3.327V7.812h-1.79zm5.405 0h-1.79v8.4h1.79v-8.4z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">Nginx</span>
+          </div>
+
+          <!-- GitHub CI/CD -->
+          <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 hover:border-purple-500 transition group shadow-sm">
+            <svg class="w-5 h-5 shrink-0 fill-slate-700 dark:fill-white" viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span class="text-xs font-bold text-slate-700 dark:text-slate-300">GitHub CI/CD</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- METODOLOGÍA DE TRABAJO -->
+  <section class="py-20 bg-slate-100/70 dark:bg-slate-900/40 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-extrabold tracking-widest text-emerald-600 dark:text-emerald-400">Proceso Transparente</h2>
+        <p class="mt-2 text-3xl font-black text-slate-900 dark:text-white">¿Cómo trabajamos tu proyecto?</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-xs font-mono font-black text-blue-600 dark:text-blue-400 mb-2">PASO 01</div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-2">Levantamiento</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Analizamos tus requerimientos funcionales, el flujo operativo y la arquitectura requerida.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-xs font-mono font-black text-sky-600 dark:text-sky-400 mb-2">PASO 02</div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-2">Prototipado</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Modelamos la base de datos, los contratos de API y las pantallas clave para tu validación.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-xs font-mono font-black text-emerald-600 dark:text-emerald-400 mb-2">PASO 03</div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-2">Desarrollo Ágil</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Desarrollo por sprints con avances funcionales y verificables en entornos de prueba.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-xs font-mono font-black text-indigo-600 dark:text-indigo-400 mb-2">PASO 04</div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-2">Pase a Producción</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Despliegue final en producción, pruebas de estrés y acompañamiento técnico continuo.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCION DE CONTACTO -->
-  <section class="py-20" id="contacto">
+  <!-- SECCIÓN DE CONTACTO FINAL -->
+  <section class="py-24" id="contacto">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-4">¿Tienes un proyecto o necesitas asesoría?</h2>
-      <p class="text-slate-600 dark:text-slate-400 mb-8 font-medium">Hablemos directamente por WhatsApp y revisemos cómo podemos ayudarte.</p>
-      <a 
-        href="https://wa.me/51920306004?text=Hola%20CodeMarket,%20tengo%20un%20proyecto%20que%20deseo%20consultar" 
-        target="_blank"
-        class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition shadow-xl shadow-emerald-600/20"
-      >
-        <span>Escribir al WhatsApp (920 306 004)</span>
-      </a>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 text-xs font-bold mb-4">
+        Disponibilidad para Nuevos Proyectos
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-4">
+        ¿Tienes un requerimiento de software o integración en mente?
+      </h2>
+      <p class="text-slate-600 dark:text-slate-300 text-base max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
+        Cuéntanos sobre tu empresa o sistema actual. Nuestro equipo evaluará la viabilidad y te presentará una propuesta técnica clara y sin compromiso.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a 
+          href="https://wa.me/51920306004?text=Hola%20CodeMarket%20Lab,%20deseo%20consultar%20por%20un%20proyecto%20de%20desarrollo" 
+          target="_blank"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition shadow-xl shadow-emerald-600/25 flex items-center justify-center gap-2"
+        >
+          <span>Escribir al WhatsApp (+51 920 306 004)</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <a 
+          href="/factuapp" 
+          class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white font-bold text-sm transition"
+        >
+          Conocer FactuApp ERP
+        </a>
+      </div>
+
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-6">
+        Tiempo estimado de respuesta: menos de 30 minutos en horario comercial.
+      </p>
     </div>
   </section>
+
 </Layout>

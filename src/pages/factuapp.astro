@@ -4,6 +4,42 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="FactuApp | Sistema ERP y Facturación Electrónica SUNAT" description="Facturación electrónica ilimitada, POS veloz, control de inventarios y giros especializados para empresas en Perú.">
   
+  <!-- SCHEMA SEO STRUCTURAL DATA -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "FactuApp",
+      "operatingSystem": "Web, Windows, macOS, Android, iOS",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "PEN",
+        "lowPrice": "40",
+        "highPrice": "100",
+        "pricePeriod": "MONTH"
+      }
+    }
+  </script>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <div class="hidden sm:block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 text-xs py-2 px-3.5 rounded-lg shadow-xl font-medium">
+      👋 ¿Dudas con tu rubro? <strong>Escríbenos en vivo</strong>
+    </div>
+    <a 
+      href="https://wa.me/51920306004?text=Hola,%20tengo%20consultas%20sobre%20FactuApp" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
+      class="h-14 w-14 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-2xl shadow-emerald-500/40 transition hover:scale-105"
+    >
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.101.005.24-.038.375.289.145.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/>
+      </svg>
+    </a>
+  </div>
+
   <!-- HERO FACTUAPP -->
   <section class="relative pt-10 pb-16 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -13,13 +49,13 @@ import Layout from '../layouts/Layout.astro';
         <img src="/logo-factuapp.png" alt="FactuApp" class="h-20 sm:h-28 w-auto object-contain drop-shadow-md" />
       </div>
 
-      <!-- Badges -->
-      <div class="flex flex-wrap items-center justify-center gap-3 mb-8">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs font-bold">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <!-- Badges Superiores Rectangulares -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5 mb-8">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-[11px] font-bold">
+          <span class="w-1.5 h-1.5 rounded-sm bg-emerald-500 animate-pulse"></span>
           Conexión Directa SUNAT & OSE Homologado
         </div>
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-700 dark:text-blue-400 text-xs font-bold">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-blue-500/10 border border-blue-500/30 text-blue-700 dark:text-blue-400 text-[11px] font-bold">
           ⚡ Soporte Crítico 24/7 por WhatsApp
         </div>
       </div>
@@ -45,7 +81,7 @@ import Layout from '../layouts/Layout.astro';
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
         <a 
-          href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20activar%20mi%20cuenta%20de%20FactuApp" 
+          href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20asesoria%20comercial%20para%20activar%20mi%20cuenta" 
           target="_blank"
           class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white font-bold text-sm transition shadow-sm"
         >
@@ -54,17 +90,23 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <!-- Credenciales del Demo -->
-      <div class="mt-6 inline-block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-5 py-2.5 text-xs text-slate-700 dark:text-slate-300 shadow-sm">
+      <div class="mt-6 inline-block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 text-xs text-slate-700 dark:text-slate-300 shadow-sm">
         🔑 Acceso Demo: <span class="text-blue-600 dark:text-blue-400 font-mono font-bold">demo@gmail.com</span> / Clave: <span class="text-blue-600 dark:text-blue-400 font-mono font-bold">123456</span>
       </div>
 
-      <!-- MOCKUP PRINCIPAL LIMPIO (SIN BOTONES DE CERRAR NI URL, SIN DEGRADADOS) -->
-      <div class="mt-14 max-w-5xl mx-auto">
+      <!-- MOCKUP PRINCIPAL -->
+      <div class="mt-14 max-w-5xl mx-auto relative">
+        <div class="absolute -top-3 right-4 z-20 hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded bg-slate-900/90 text-white border border-slate-700 text-[11px] shadow-lg">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          SUNAT Servidor Oficial: Operativo 99.9%
+        </div>
         <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0E131F] shadow-2xl p-2 sm:p-3">
-          <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
+          <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900">
             <img 
               src="/dashboard-real.png" 
-              alt="Panel Principal FactuApp" 
+              alt="Panel Principal FactuApp ERP" 
+              loading="eager"
+              fetchpriority="high"
               class="w-full h-auto object-cover object-top block"
               onerror="this.onerror=null; this.src='/dashboard.png';"
             />
@@ -75,63 +117,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- SECCIÓN: EMPRESAS QUE TRABAJAN CON NOSOTROS -->
-  <section class="py-16 bg-white dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="text-xs uppercase font-extrabold tracking-widest text-slate-500 dark:text-slate-400 mb-10">
-        Empresas que confían su facturación y gestión en nuestra plataforma
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-center max-w-5xl mx-auto">
-        <!-- San Mateo -->
-        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 flex flex-col items-center justify-center hover:border-blue-500 transition shadow-sm h-48">
-          <div class="h-16 flex items-center justify-center mb-3">
-            <img 
-              src="/cliente-sanmateo.png" 
-              alt="Logo San Mateo Business Group" 
-              class="max-h-14 max-w-[180px] w-auto object-contain filter dark:brightness-110"
-              onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-2xl font-black text-slate-900 dark:text-white tracking-wider\'>SAN MATEO</span>';"
-            />
-          </div>
-          <span class="text-xs font-bold text-slate-600 dark:text-slate-300 tracking-wide text-center uppercase mt-1">
-            San Mateo Business Group S.R.L.
-          </span>
-        </div>
-
-        <!-- Citec -->
-        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 flex flex-col items-center justify-center hover:border-emerald-500 transition shadow-sm h-48">
-          <div class="h-16 flex items-center justify-center mb-3">
-            <img 
-              src="/cliente-citec.png" 
-              alt="Logo Citec" 
-              class="max-h-14 max-w-[180px] w-auto object-contain filter dark:brightness-110"
-              onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-2xl font-black text-blue-600 dark:text-blue-400 tracking-wider\'>CITEC</span>';"
-            />
-          </div>
-          <span class="text-xs font-bold text-slate-600 dark:text-slate-300 tracking-wide text-center uppercase mt-1">
-            Citec by San Mateo S.R.L.
-          </span>
-        </div>
-
-        <!-- Lopac -->
-        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 flex flex-col items-center justify-center hover:border-indigo-500 transition shadow-sm h-48">
-          <div class="h-16 flex items-center justify-center mb-3">
-            <img 
-              src="/cliente-lopac.png" 
-              alt="Logo Lopac Infosecure" 
-              class="max-h-14 max-w-[180px] w-auto object-contain filter dark:brightness-110"
-              onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-2xl font-black text-emerald-600 dark:text-emerald-400 tracking-wider\'>LOPAC INFOSECURE</span>';"
-            />
-          </div>
-          <span class="text-xs font-bold text-slate-600 dark:text-slate-300 tracking-wide text-center uppercase mt-1">
-            Lopac Infosecure S.A.C.
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES DESCRIPTIVAS COMPLETAS DEL ERP (4 MÓDULOS SIN DEGRADADOS) -->
+  <!-- FEATURES DESCRIPTIVAS COMPLETAS DEL ERP -->
   <section class="py-24 space-y-24">
     
     <!-- 1. Emisión y WhatsApp -->
@@ -156,6 +142,7 @@ import Layout from '../layouts/Layout.astro';
             <img 
               src="/feature-ventas.png" 
               alt="Módulo de Ventas" 
+              loading="lazy"
               class="w-full h-auto object-cover block"
               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80';"
             />
@@ -172,6 +159,7 @@ import Layout from '../layouts/Layout.astro';
             <img 
               src="/feature-pos.png" 
               alt="Punto de Venta POS" 
+              loading="lazy"
               class="w-full h-auto object-cover block"
               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=800&q=80';"
             />
@@ -215,6 +203,7 @@ import Layout from '../layouts/Layout.astro';
             <img 
               src="/feature-inventario.png" 
               alt="Inventario y Kardex" 
+              loading="lazy"
               class="w-full h-auto object-cover block"
               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80';"
             />
@@ -231,6 +220,7 @@ import Layout from '../layouts/Layout.astro';
             <img 
               src="/feature-gre.png" 
               alt="Guías de Remisión Electrónicas GRE" 
+              loading="lazy"
               class="w-full h-auto object-cover block"
               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80';"
             />
@@ -287,15 +277,36 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- TABLA DE PRECIOS -->
+  <!-- TABLA DE PRECIOS CON TOGGLE MENSUAL/ANUAL -->
   <section class="py-24" id="precios">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="text-center max-w-3xl mx-auto mb-10">
         <h2 class="text-xs uppercase font-bold tracking-widest text-emerald-600 dark:text-emerald-400">Planes y Precios</h2>
         <p class="mt-2 text-3xl font-black text-slate-900 dark:text-white">Sin sorpresas ni cobros por factura emitida</p>
       </div>
 
+      <!-- SWITCH MENSUAL / ANUAL -->
+      <div class="flex items-center justify-center gap-3 mb-14">
+        <span class="text-sm font-bold text-slate-700 dark:text-slate-300" id="label-monthly">Mensual</span>
+        <button 
+          id="billing-toggle" 
+          type="button" 
+          aria-label="Alternar plan de pago"
+          class="w-14 h-8 bg-slate-300 dark:bg-slate-700 rounded-full p-1 transition-colors duration-300 relative focus:outline-none"
+        >
+          <div id="toggle-circle" class="w-6 h-6 bg-white dark:bg-blue-500 rounded-full shadow-md transition-transform duration-300 transform translate-x-0"></div>
+        </button>
+        <span class="text-sm font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5" id="label-annual">
+          Anual 
+          <span class="bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded">
+            Ahorra 2 meses + Activación S/ 0
+          </span>
+        </span>
+      </div>
+
+      <!-- 3 TARJETAS DE PLANES PRINCIPALES -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        
         <!-- PLAN BASICO -->
         <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
           <div>
@@ -303,10 +314,12 @@ import Layout from '../layouts/Layout.astro';
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Para formalizarte y emitir sin límites</p>
             <div class="mt-6">
               <div class="flex items-baseline gap-1">
-                <span class="text-4xl font-extrabold text-slate-900 dark:text-white">S/ 39</span>
-                <span class="text-slate-500 dark:text-slate-400 text-sm">/mes</span>
+                <span class="text-4xl font-extrabold text-slate-900 dark:text-white font-mono" id="price-basic">S/ 40</span>
+                <span class="text-slate-500 dark:text-slate-400 text-sm" id="period-basic">/mes</span>
               </div>
-              <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1">o S/ 390 al año (Ahorra 2 meses)</p>
+              <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1" id="subtext-basic">
+                o S/ 400 al año (Ahorra 2 meses)
+              </p>
             </div>
             <ul class="mt-8 space-y-3 text-sm text-slate-600 dark:text-slate-300">
               <li class="flex items-center gap-2">✓ Facturas y Boletas ilimitadas</li>
@@ -317,14 +330,19 @@ import Layout from '../layouts/Layout.astro';
               <li class="flex items-center gap-2">✓ Soporte estándar</li>
             </ul>
           </div>
-          <a href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Básico%20de%20FactuApp" target="_blank" class="mt-8 block text-center py-3.5 px-4 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 font-bold text-sm transition text-slate-900 dark:text-white">
+          <a 
+            id="btn-basic"
+            href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Básico%20Mensual%20de%20S/%2040" 
+            target="_blank" 
+            class="mt-8 block text-center py-3.5 px-4 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 font-bold text-sm transition text-slate-900 dark:text-white"
+          >
             Elegir Básico
           </a>
         </div>
 
         <!-- PLAN COMERCIAL -->
         <div class="bg-white dark:bg-slate-900 border-2 border-blue-600 rounded-3xl p-8 flex flex-col justify-between relative shadow-xl">
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded uppercase tracking-wider">
             Más Popular
           </div>
           <div>
@@ -332,10 +350,12 @@ import Layout from '../layouts/Layout.astro';
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Ideal para tiendas, ventas y stock</p>
             <div class="mt-6">
               <div class="flex items-baseline gap-1">
-                <span class="text-4xl font-extrabold text-slate-900 dark:text-white">S/ 69</span>
-                <span class="text-slate-500 dark:text-slate-400 text-sm">/mes</span>
+                <span class="text-4xl font-extrabold text-slate-900 dark:text-white font-mono" id="price-commercial">S/ 70</span>
+                <span class="text-slate-500 dark:text-slate-400 text-sm" id="period-commercial">/mes</span>
               </div>
-              <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1">o S/ 690 al año (Ahorra 2 meses)</p>
+              <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1" id="subtext-commercial">
+                o S/ 700 al año (Ahorra 2 meses)
+              </p>
             </div>
             <ul class="mt-8 space-y-3 text-sm text-slate-600 dark:text-slate-300">
               <li class="flex items-center gap-2 font-bold text-blue-600 dark:text-blue-400">✓ Todo lo del Plan Básico</li>
@@ -346,7 +366,12 @@ import Layout from '../layouts/Layout.astro';
               <li class="flex items-center gap-2">✓ Reportes de utilidades y ventas</li>
             </ul>
           </div>
-          <a href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Comercial%20de%20FactuApp" target="_blank" class="mt-8 block text-center py-3.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 font-bold text-sm transition shadow-lg shadow-blue-600/30 text-white">
+          <a 
+            id="btn-commercial"
+            href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Comercial%20Mensual%20de%20S/%2070" 
+            target="_blank" 
+            class="mt-8 block text-center py-3.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 font-bold text-sm transition shadow-lg shadow-blue-600/30 text-white"
+          >
             Elegir Comercial
           </a>
         </div>
@@ -358,10 +383,12 @@ import Layout from '../layouts/Layout.astro';
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Negocios especializados y distribución</p>
             <div class="mt-6">
               <div class="flex items-baseline gap-1">
-                <span class="text-4xl font-extrabold text-slate-900 dark:text-white">S/ 99</span>
-                <span class="text-slate-500 dark:text-slate-400 text-sm">/mes</span>
+                <span class="text-4xl font-extrabold text-slate-900 dark:text-white font-mono" id="price-pro">S/ 100</span>
+                <span class="text-slate-500 dark:text-slate-400 text-sm" id="period-pro">/mes</span>
               </div>
-              <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1">o S/ 990 al año (Ahorra 2 meses)</p>
+              <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1" id="subtext-pro">
+                o S/ 1,000 al año (Ahorra 2 meses)
+              </p>
             </div>
             <ul class="mt-8 space-y-3 text-sm text-slate-600 dark:text-slate-300">
               <li class="flex items-center gap-2 font-bold text-emerald-600 dark:text-emerald-400">✓ Todo lo del Plan Comercial</li>
@@ -372,11 +399,69 @@ import Layout from '../layouts/Layout.astro';
               <li class="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-bold">✓ Soporte Crítico 24/7 Exclusivo</li>
             </ul>
           </div>
-          <a href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Pro%20de%20FactuApp" target="_blank" class="mt-8 block text-center py-3.5 px-4 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 font-bold text-sm transition text-slate-900 dark:text-white">
+          <a 
+            id="btn-pro"
+            href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Pro%20Mensual%20de%20S/%20100" 
+            target="_blank" 
+            class="mt-8 block text-center py-3.5 px-4 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 font-bold text-sm transition text-slate-900 dark:text-white"
+          >
             Elegir Pro
           </a>
         </div>
       </div>
+
+      <!-- ETIQUETAS DE INFORMACIÓN ADICIONAL -->
+      <div class="max-w-6xl mx-auto mt-10">
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3.5">
+          
+          <!-- Fila 1: Adicionales del sistema -->
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-slate-800/80">
+            <span class="text-xs font-bold text-slate-900 dark:text-white shrink-0">
+              Recursos y Adicionales:
+            </span>
+            <div class="flex flex-wrap items-center gap-2 text-xs">
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300">
+                <span>👤 Usuario extra:</span>
+                <span class="font-bold font-mono text-blue-600 dark:text-blue-400">S/ 20/mes c/u</span>
+              </div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300">
+                <span>🏢 Sucursal / Almacén extra:</span>
+                <span class="font-bold font-mono text-blue-600 dark:text-blue-400">S/ 40/mes c/u</span>
+              </div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300">
+                <span>🧩 App / Giro extra:</span>
+                <span class="font-bold font-mono text-blue-600 dark:text-blue-400">S/ 30/mes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fila 2: Activación y Configuración Inicial -->
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 text-xs">
+            <div class="flex flex-wrap items-center gap-2 text-slate-600 dark:text-slate-300">
+              <span class="font-bold text-slate-900 dark:text-white shrink-0">Activación y Configuración Inicial:</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded bg-emerald-500/15 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 font-bold text-[10px] uppercase tracking-wider">
+                🎁 100% GRATIS en Plan Anual
+              </span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 font-semibold text-slate-700 dark:text-slate-300 text-[11px]">
+                Plan mensual: S/ 50 (Pago único)
+              </span>
+              <span class="text-slate-500 dark:text-slate-400">
+                (Incluye subida de Certificado Digital a SUNAT, carga de logo institucional y configuración de ticket/A4).
+              </span>
+            </div>
+            
+            <a 
+              href="https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20consultar%20por%20los%20adicionales%20de%20FactuApp" 
+              target="_blank" 
+              class="font-bold text-blue-600 hover:text-blue-500 dark:text-blue-400 shrink-0 inline-flex items-center gap-1"
+            >
+              Consultar con asesor →
+            </a>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -391,9 +476,9 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
           <div class="text-2xl mb-3">🚀</div>
-          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Activación sin costo</h3>
-          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Contratas y emites el mismo día si ya tienes tus credenciales de SUNAT. Sin costo de apertura.</p>
-          <span class="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">S/ 0 de activación</span>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Activación Inmediata</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Empieza a operar en minutos con tus credenciales SOL o solicita nuestra asistencia guiada.</p>
+          <span class="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">Rápido y sencillo</span>
         </div>
 
         <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
@@ -486,6 +571,53 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- SECCIÓN: EMPRESAS QUE CONFÍAN EN NOSOTROS (ESTILO ELEGANTE Y COMPACTO) -->
+  <section class="py-16 bg-white dark:bg-slate-900/60 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-bold mb-3">
+        ✓ Más de 1,500,000 comprobantes procesados con éxito
+      </div>
+      <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-8">
+        Empresas peruanas que respaldan su facturación en FactuApp
+      </h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto items-center">
+        <!-- San Mateo -->
+        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/80 dark:border-slate-800 flex flex-col items-center justify-center transition group hover:border-blue-500">
+          <img 
+            src="/cliente-sanmateo.png" 
+            alt="Logo San Mateo Business Group" 
+            class="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition duration-300 filter dark:brightness-110"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-black text-slate-800 dark:text-white tracking-wider\'>SAN MATEO</span>';"
+          />
+          <span class="text-[11px] font-bold text-slate-500 dark:text-slate-400 tracking-wide uppercase mt-3">San Mateo Business Group</span>
+        </div>
+
+        <!-- Citec -->
+        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/80 dark:border-slate-800 flex flex-col items-center justify-center transition group hover:border-emerald-500">
+          <img 
+            src="/cliente-citec.png" 
+            alt="Logo Citec" 
+            class="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition duration-300 filter dark:brightness-110"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-black text-slate-800 dark:text-white tracking-wider\'>CITEC</span>';"
+          />
+          <span class="text-[11px] font-bold text-slate-500 dark:text-slate-400 tracking-wide uppercase mt-3">Citec S.R.L.</span>
+        </div>
+
+        <!-- Lopac -->
+        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/80 dark:border-slate-800 flex flex-col items-center justify-center transition group hover:border-indigo-500">
+          <img 
+            src="/cliente-lopac.png" 
+            alt="Logo Lopac Infosecure" 
+            class="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition duration-300 filter dark:brightness-110"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-black text-slate-800 dark:text-white tracking-wider\'>LOPAC INFOSECURE</span>';"
+          />
+          <span class="text-[11px] font-bold text-slate-500 dark:text-slate-400 tracking-wide uppercase mt-3">Lopac Infosecure S.A.C.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CENTRAL DE VENTAS CON ASESORES -->
   <section class="py-16 bg-slate-100/80 dark:bg-slate-900/80 border-t border-slate-200 dark:border-slate-800" id="ventas">
     <div class="max-w-4xl mx-auto px-4 text-center">
@@ -519,5 +651,71 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+
+  <!-- JAVASCRIPT NATIVO PARA EL SWITCH INTERACTIVO MENSUAL/ANUAL -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('billing-toggle');
+      const circle = document.getElementById('toggle-circle');
+      let isAnnual = false;
+
+      const prices = {
+        monthly: { basic: 'S/ 40', commercial: 'S/ 70', pro: 'S/ 100', period: '/mes' },
+        annual: { basic: 'S/ 400', commercial: 'S/ 700', pro: 'S/ 1,000', period: '/año' }
+      };
+
+      const links = {
+        monthly: {
+          basic: 'https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Básico%20Mensual%20de%20S/%2040',
+          commercial: 'https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Comercial%20Mensual%20de%20S/%2070',
+          pro: 'https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Pro%20Mensual%20de%20S/%20100'
+        },
+        annual: {
+          basic: 'https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Básico%20ANUAL%20(S/%20400)%20con%20Activación%20GRATIS',
+          commercial: 'https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Comercial%20ANUAL%20(S/%20700)%20con%20Activación%20GRATIS',
+          pro: 'https://wa.me/51920306004?text=Hola%20Jhon,%20deseo%20el%20Plan%20Pro%20ANUAL%20(S/%201000)%20con%20Activación%20GRATIS'
+        }
+      };
+
+      if (toggle) {
+        toggle.addEventListener('click', () => {
+          isAnnual = !isAnnual;
+
+          // Animate switch
+          if (isAnnual) {
+            circle.classList.remove('translate-x-0');
+            circle.classList.add('translate-x-6');
+            toggle.classList.add('bg-blue-600');
+            toggle.classList.remove('bg-slate-300', 'dark:bg-slate-700');
+          } else {
+            circle.classList.remove('translate-x-6');
+            circle.classList.add('translate-x-0');
+            toggle.classList.remove('bg-blue-600');
+            toggle.classList.add('bg-slate-300', 'dark:bg-slate-700');
+          }
+
+          // Update texts
+          const p = isAnnual ? prices.annual : prices.monthly;
+          const l = isAnnual ? links.annual : links.monthly;
+
+          document.getElementById('price-basic').textContent = p.basic;
+          document.getElementById('price-commercial').textContent = p.commercial;
+          document.getElementById('price-pro').textContent = p.pro;
+
+          document.getElementById('period-basic').textContent = p.period;
+          document.getElementById('period-commercial').textContent = p.period;
+          document.getElementById('period-pro').textContent = p.period;
+
+          document.getElementById('subtext-basic').textContent = isAnnual ? 'Facturado anualmente (Activación S/ 0)' : 'o S/ 400 al año (Ahorra 2 meses)';
+          document.getElementById('subtext-commercial').textContent = isAnnual ? 'Facturado anualmente (Activación S/ 0)' : 'o S/ 700 al año (Ahorra 2 meses)';
+          document.getElementById('subtext-pro').textContent = isAnnual ? 'Facturado anualmente (Activación S/ 0)' : 'o S/ 1,000 al año (Ahorra 2 meses)';
+
+          document.getElementById('btn-basic').href = l.basic;
+          document.getElementById('btn-commercial').href = l.commercial;
+          document.getElementById('btn-pro').href = l.pro;
+        });
+      }
+    });
+  </script>
 
 </Layout>
